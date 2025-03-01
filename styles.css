@@ -1,0 +1,142 @@
+
+/* Google Fonts *//* Reset default margins and set box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles with a subtle gradient background */
+body {
+    font-family: 'League Spartan', sans-serif;
+    background: linear-gradient(135deg, #1e1e2e, #272932);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main container with responsive width and shadow */
+.container {
+    background: #282a36;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+/* Display container for the generated password */
+.display-container {
+    display: flex;
+    align-items: center;
+    background: #44475a;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+/* Password display input styling */
+.display {
+    flex: 1;
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+
+/* Copy button styling */
+button[data-copy] {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Input container for slider and checkboxes */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Password length container */
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Slider styling */
+.slider {
+    width: 100%;
+    accent-color: #50fa7b;
+    cursor: pointer;
+}
+
+/* Checkbox container ensuring left alignment */
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.checkbox-container div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Style for checkboxes */
+input[type="checkbox"] {
+    accent-color: #50fa7b;
+}
+
+/* Strength indicator section */
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Indicator dot that may be updated via JavaScript */
+[data-indicator] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+}
+
+/* Generate button with hover effect */
+.generateButton {
+    background: #50fa7b;
+    color: #282a36;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.generateButton:hover {
+    background: #40d979;
+}
